@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from "react-router-dom";
 import {useNavigate} from 'react-router-dom';
 import Senddetailsandretrivecustomer from '../services/signindetails';
 
@@ -19,17 +19,22 @@ const navigate = useNavigate();
         );
     }
     
-  const handleSubmit = event=> {
+  const handleSubmit = async(event)=> {
     event.preventDefault();
-    const value=Senddetailsandretrivecustomer(logindata);
-    console.log(value);
-  
-    value.then(function(response){
-          if(response.data.customerId !== "" || response.data.customerId !== null){
-            navigate("/dashboard",{state:response.data});
-        }
-    
-    });    
+
+    try {
+      const response=await(Senddetailsandretrivecustomer(logindata));
+      if (response.data.customerId !== "" || response.data.customerId !== null) {
+        navigate("/dashboard",{state:response.data});
+        console.log(response.data);
+      }
+    } catch (error) {
+      if (error.response && error.response.status === 404) {
+        alert("You already have account with this email try with another email");
+      } else {
+        alert("Enter the valid details as per the given instruction");
+      }
+    }
   };
 
   return (
@@ -43,6 +48,9 @@ const navigate = useNavigate();
         <input type="password" name="password" value={password} onChange={changeHandler} />
       </label>
       <button type="submit">Submit</button>
+      <Link  to="/">
+            <button class="btn btn-outline-danger">Go Back</button><br/><br/>
+            </Link>
     </form>
   );
 };

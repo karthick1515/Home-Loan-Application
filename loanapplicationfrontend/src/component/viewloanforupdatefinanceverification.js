@@ -22,14 +22,14 @@ const ViewLoanUpdateFinanceVerification = (props) => {
          <p> Application Date: {location.state.applicationDate} </p>
          <p>Customer Address: {location.state.customerAddress} </p>
           <p>Occupation: {location.state.occupation} </p>
-          <p>Annual Salary: {location.state.annualSalary} </p>
+          <p>Annual Salary in LPA: {location.state.annualSalary} </p>
           <p>Company Address: {location.state.companyAddress} </p>
           <p>Time Needed to Return the Loan (In Year): {location.state.neededtimetoreturn}</p>
          <p>Loan Applied Amount: {location.state.loanAppliedAmount} </p>
          <p>Loan Approved Amount: {location.state.loanApprovedAmount} </p>
          <p>Land Verification Approval: {location.state.landVerificationApproval} </p>
          <p>Finance Verification Approval: {location.state.financeVerificationApproval} </p>
-         <p>Admin Approval: {location.state.adminApproval} </p>
+         <p>Manager Approval: {location.state.adminApproval} </p>
          <p>Over All Status: {location.state.status} </p>
             <Link  onClick={handleSubmit} to="/financeverificationupdate">
             <button class="btn btn-outline-danger">Update</button><br/><br/>

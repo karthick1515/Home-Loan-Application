@@ -28,7 +28,6 @@ function Addfinanceverificationofficer() {
     const submitHandler = async (e) => {
         e.preventDefault();
         console.log(data);
-
         try {
           const response = await Sendfinanceverificationdetails(data);
           console.log("response---", response);
@@ -36,6 +35,7 @@ function Addfinanceverificationofficer() {
             navigate("/verificationofficersuccessfullyadded");
             console.log(response.data);
           }
+
         } catch (error) {
           if (error.response && error.response.status === 404) {
             alert("The officer is already there with this email try with another email");
@@ -43,7 +43,7 @@ function Addfinanceverificationofficer() {
             alert("An error occurred while submitting the form check whether your entered the valid details according to the instruction.");
           }
         }
-      };
+      }
     
     return(
         <div><center>
@@ -54,14 +54,11 @@ function Addfinanceverificationofficer() {
                 <input type="password" name="password" value={password} onChange={changeHandler}/> <br />
                 <label>Role</label><br />
                 <input type="text" name="role" value={role} onChange={changeHandler}/> <br />
-               
                 <label>Finanance Verification Officer Name</label><br />
-               
-                <input type="text" name="finOfficerName" value={finOfficerName} onChange={changeHandler}/> <br />
+               <input type="text" name="finOfficerName" value={finOfficerName} onChange={changeHandler}/> <br />
                 <label>Finanance Verification Officer MobileNumber</label><br />
                 <input type="text" name="finOfficerContact" value={finOfficerContact} onChange={changeHandler}/> <br />
-                
-                <input type="submit" name="submit"/><br/><br/>
+                  <input type="submit" name="submit"/><br/><br/>
                 <Link  to="/admindashboard">
             <button class="btn btn-outline-danger">Go Back</button><br/><br/>
             </Link>

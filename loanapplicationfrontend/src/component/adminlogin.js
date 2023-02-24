@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate,Link} from 'react-router-dom';
 import Sendadminsigndetails from '../services/sendadminsigndetails';
 
 const AdminLoginForm = (props) => {
@@ -42,7 +42,10 @@ const navigate = useNavigate();
         Password:
         <input type="password" name="password" value={password} onChange={changeHandler} />
       </label>
-      <button type="submit">Submit</button>
+      <button type="submit">Submit</button><br/>
+      <Link  to="/">
+            <button class="btn btn-outline-danger">Go Back</button><br/><br/>
+            </Link>
     </form>
   );
 };

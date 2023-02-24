@@ -1,0 +1,20 @@
+package com.homeloanapp.service;
+
+import java.util.List;
+
+import com.homeloanapp.entities.LandVerificationOfficer;
+import com.homeloanapp.entities.LoanApplication;
+import com.homeloanapp.exceptions.InvalidLoanApplicationException;
+import com.homeloanapp.exceptions.LandVerificationOfficerException;
+
+public interface ILandVerificationService {
+public LandVerificationOfficer addLandVerificationOfficer(LandVerificationOfficer landVerification) throws LandVerificationOfficerException ;
+public LandVerificationOfficer updateLandVerificationOfficer(LandVerificationOfficer landVerification) throws LandVerificationOfficerException;
+public LandVerificationOfficer deleteLandVerificationOfficer(int id) throws LandVerificationOfficerException;
+public LandVerificationOfficer viewLandVerificationOfficer(int id) throws LandVerificationOfficerException;
+public List<LandVerificationOfficer> viewAllLandVerificationOfficer() throws LandVerificationOfficerException;
+
+public LandVerificationOfficer login(String email,String password) throws LandVerificationOfficerException;
+
+public LoanApplication updateStatus(LoanApplication loanApplication) throws InvalidLoanApplicationException ;
+}

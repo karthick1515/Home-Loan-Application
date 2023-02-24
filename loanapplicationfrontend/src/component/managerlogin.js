@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate,Link} from 'react-router-dom';
 import SendManagersigndetails from '../services/sendmanagersigndetails';
 
 const ManagerLogin = (props) => {
@@ -42,6 +42,9 @@ const navigate = useNavigate();
         <input type="password" name="password" value={password} onChange={changeHandler} />
       </label>
       <button type="submit">Submit</button>
+      <Link  to="/">
+            <button class="btn btn-outline-danger">Go Back</button><br/><br/>
+            </Link>
     </form>
   );
 };

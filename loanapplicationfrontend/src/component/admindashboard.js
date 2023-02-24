@@ -15,6 +15,9 @@ const  AdminDashBoard = (props) => {
             <Link to="/addmanager">
             <button class="btn btn-outline-danger">Add Manager</button><br/><br/>
             </Link>
+            <Link  to="/">
+            <button class="btn btn-outline-danger">Sign Out</button><br/><br/>
+            </Link>
             </center>
         </>
     );

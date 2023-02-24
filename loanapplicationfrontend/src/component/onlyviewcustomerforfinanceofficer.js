@@ -7,7 +7,6 @@ const OnlyViewCustomerDetailsForFinanceOfficer = (props) => {
      return (
     <><center>
     <div>
-     
          <p>CustomerDetails</p>
        <p>Customer Id: {location.state.customerId} </p>
       <p>Email: {location.state.emailId} </p>

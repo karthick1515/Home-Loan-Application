@@ -65,7 +65,7 @@ function SignUp() {
                 <input type="text" name="nationality" value={nationality} onChange={changeHandler}/> <br />
                 <label>AadharNumber</label><br />
                 <input type="number" name="aadharNumber" value={aadharNumber} onChange={changeHandler}/> <br />
-                <label>panNumber</label><br />
+                <label>PanNumber</label><br />
                 <input type="text" name="panNumber" value={panNumber} onChange={changeHandler}/> <br />
                 
                 <input type="submit" name="submit"/><br/><br/>

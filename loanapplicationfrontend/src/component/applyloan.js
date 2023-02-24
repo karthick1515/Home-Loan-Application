@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import SendLoanApplicationDetails from '../services/loanapplicationdetails';
 
-
 const  ApplyLoan = (props) => {
     const location= useLocation();
     console.log(location.state);
