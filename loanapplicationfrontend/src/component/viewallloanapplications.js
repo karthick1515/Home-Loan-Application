@@ -17,7 +17,7 @@ const ViewAllLoanApplication = () => {
       <h1>All Loan Applications</h1>
       <LoanApplicationTable loanapplications={loanapplications} />
       <Link  to="/managerdashboard">
-            <button class="btn btn-outline-danger">Go Back</button><br/><br/>
+            <button class="btn btn-outline-success">Go Back</button><br/><br/>
             </Link>
     </div></center>
   );

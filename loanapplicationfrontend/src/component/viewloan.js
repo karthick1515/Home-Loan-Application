@@ -19,11 +19,10 @@ const LoanDetails = (props) => {
     console.log(value);
             navigate("/dashboard",{state:value.data});
   };
-
   return (
     <><center>
     <div>
-         <p>Loan Application Details</p>
+         <h4>Loan Application Details</h4>
          <p>Loan Application Id:{location.state.applicationId}</p>
          <p>Customer Id: {location.state.customerId} </p>
          <p> Application Date: {location.state.applicationDate} </p>

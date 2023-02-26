@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 function About(){
-    return (
+    return (<div className="bg">
         <center>
-        <p>Welcome to Our Application the followings are the some Guidance to use the Application</p>
+       <h4><p>Welcome to Our Application the followings are the some Guidance to use the Application</p></h4> 
  <p>1.Personal information: You will need to provide your full name, date of birth, address, and contact information.</p>
 <p>
 2.Employment information: You will need to provide information about your current employment, including your job title, employer's name and contact details, length of employment, and your gross monthly income.
@@ -23,7 +23,7 @@ function About(){
        
         <Link  to="/">
         <button class="btn btn-outline-danger">Go Back</button><br/><br/>
-        </Link> </center>
+        </Link> </center></div>
     );
 }
 export default About;

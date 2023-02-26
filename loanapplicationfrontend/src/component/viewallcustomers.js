@@ -17,7 +17,7 @@ const ViewAllCustomer = () => {
       <h1>All Customers</h1>
       <Table customers={customers} />
       <Link  to="/managerdashboard">
-            <button class="btn btn-outline-danger">Go Back</button><br/><br/>
+            <button class="btn btn-outline-success">Go Back</button><br/><br/>
             </Link>
     </div></center>
   );

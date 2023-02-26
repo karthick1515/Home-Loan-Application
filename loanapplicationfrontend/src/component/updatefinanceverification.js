@@ -62,35 +62,36 @@ const  FinanceVerificationOfficerUpdate = (props) => {
     return(
         <div><center>
             <form onSubmit={submitHandler}>
-            <label>Application Id</label><br />
+            <h4>Loan Application Details</h4>
+            <label>Application Id:</label><br />
                 <input type="text" name="applicationId" value={data.applicationId}  onChange={changeHandler} readOnly/> <br />
-            <label>Customer Id</label><br />
+            <label>Customer Id:</label><br />
                 <input type="text" name="customerId" value={data.customerId}  onChange={changeHandler} readOnly/> <br />
-                <label>Applied Date</label><br />
+                <label>Applied Date:</label><br />
                 <input type="text" name="applicationDate" value={data.applicationDate} onChange={changeHandler} readOnly/> <br />
-                <label>Loan Applying Amount</label><br />
+                <label>Loan Applying Amount:</label><br />
                 <input type="text" name="loanAppliedAmount" value={data.loanAppliedAmount} onChange={changeHandler} readOnly/> <br />
-                <label>Customer Address</label><br />
+                <label>Customer Address:</label><br />
                 <input type="text" name="customerAddress" value={data.customerAddress} onChange={changeHandler} readOnly/> <br />
-                <label>Occupation</label><br />
+                <label>Occupation:</label><br />
                 <input type="text" name="occupation" value={data.occupation} onChange={changeHandler} readOnly/> <br />
-                <label>Annual Salary</label><br />
+                <label>Annual Salary:</label><br />
                 <input type="text" name="annualSalary" value={data.annualSalary} onChange={changeHandler} readOnly/> <br />
-                <label>Company Address</label><br />
+                <label>Company Address:</label><br />
                 <input type="text" name="companyAddress" value={data.companyAddress} onChange={changeHandler} readOnly/> <br />
-                <label>Needed Time to Return the Loan(In Year)</label><br />
+                <label>Needed Time to Return the Loan(In Year):</label><br />
                 <input type="text" name="neededtimetoreturn" value={data.neededtimetoreturn} onChange={changeHandler} readOnly/> <br />
-                <label>Loan Approved Amount</label><br />
+                <label>Loan Approved Amount:</label><br />
                 <input type="text" name="loanApprovedAmount" value={data.loanApprovedAmount} onChange={changeHandler} readOnly/> <br />
-                <label>Land Verification Approval</label><br />
+                <label>Land Verification Approval:</label><br />
                 <input type="text" name="landVerificationApproval" value={data.landVerificationApproval} onChange={changeHandler} readOnly/> <br/>
-                <label>Finance Verification Approval</label><br/>
+                <label>Finance Verification Approval:</label><br/>
                 <input type="text" name="financeVerificationApproval" value={data.financeVerificationApproval} onChange={changeHandler} /> <br />
-                <label>Manager Approval</label><br />
+                <label>Manager Approval:</label><br />
                 <input type="text" name="adminApproval" value={data.adminApproval} onChange={changeHandler} readOnly/> <br />
-                <label>Overr All Status</label><br />
-                <input type="text" name="status" value={data.status} onChange={changeHandler} readOnly/> <br />
-                <input type="submit" name="submit" value="Submit"/>
+                <label>Overr All Status:</label><br />
+                <input type="text" name="status" value={data.status} onChange={changeHandler} readOnly/> <br /><br/>
+                <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"/><br/>
                 <Link onClick={submitCancelHandler}  to="/viewloanforfinanceverification">
             <button class="btn btn-outline-danger">Cancel</button><br/><br/>
                         </Link>

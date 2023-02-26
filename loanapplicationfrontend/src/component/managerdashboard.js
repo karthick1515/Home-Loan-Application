@@ -5,6 +5,7 @@ const  ManagerDashBoard = (props) => {
     return (
         <>
            <center>
+            <h4>Manager Profile</h4><br/>
             <Link to="/searchloanforupdatethemanagerverification">
             <button class="btn btn-outline-danger">View Loan Details To Update The Manager Verification</button><br/><br/>
             </Link>

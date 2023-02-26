@@ -25,8 +25,7 @@ const CustomerDetails = (props) => {
   return (
     <><center>
     <div>
-      <p>Welcome {location.state.customerName}</p>
-         <p>CustomerDetails</p>
+         <h4>Profile</h4>
        <p>Customer Id: {location.state.customerId} </p>
       <p>Email: {location.state.emailId} </p>
       <p>Name : {location.state.customerName} </p>
@@ -38,7 +37,7 @@ const CustomerDetails = (props) => {
       <p>PanNumber : {location.state.panNumber} </p>
      
       <Link onClick={handleUpdateSubmit} to="/update">
-            <button class="btn btn-outline-danger">Update</button><br/><br/>
+            <button class="btn btn-outline-success">Update</button><br/><br/>
             </Link>
             <Link onClick={handleBackSubmit}  to="/dashboard">
             <button class="btn btn-outline-danger">Back</button><br/><br/>

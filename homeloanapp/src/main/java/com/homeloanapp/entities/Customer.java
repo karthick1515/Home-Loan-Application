@@ -41,7 +41,7 @@ public class Customer{
 	
 	@NotEmpty
 	@NotEmpty(message = "Password can't be empty!")
-	@Size(min = 8, max = 20, message = "Password has to be of minimum 8 chars!")
+	@Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$")
 	private String password;
 
 	@NotEmpty(message = "Customer Name can't be empty!")

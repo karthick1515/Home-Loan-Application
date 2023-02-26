@@ -16,7 +16,7 @@ const ViewLoanUpdateFinanceVerification = (props) => {
   return (
     <><center>
     <div>
-         <p>Loan Application Details</p>
+         <h4>Loan Application Details</h4>
          <p>Loan Application Id:{location.state.applicationId}</p>
          <p>Customer Id: {location.state.customerId} </p>
          <p> Application Date: {location.state.applicationDate} </p>
@@ -32,7 +32,7 @@ const ViewLoanUpdateFinanceVerification = (props) => {
          <p>Manager Approval: {location.state.adminApproval} </p>
          <p>Over All Status: {location.state.status} </p>
             <Link  onClick={handleSubmit} to="/financeverificationupdate">
-            <button class="btn btn-outline-danger">Update</button><br/><br/>
+            <button class="btn btn-outline-success" >Update</button><br/><br/>
             </Link>
             <Link to="/searchloanforupdatethefinanceverification">
             <button class="btn btn-outline-danger">Go Back</button><br/><br/>

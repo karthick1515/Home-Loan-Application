@@ -32,13 +32,14 @@ const navigate = useNavigate();
   };
 
   return (<center>
+     <h4>Loan Search</h4>
     <form onSubmit={handleSubmit}>
       <label>
         Enter the CustomerId To Update Land Verification The Customer's Loan Application:
         <input type="text" name="customerId" value={customerId} onChange={changeHandler} />
       </label><br/><br/>
       
-      <button type="submit">Search Loan Application</button><br/><br/>
+      <button class="btn btn-outline-success" type="submit">Search Loan Application</button><br/><br/>
       <Link  to="/landofficerdashboard">
             <button class="btn btn-outline-danger">Go Back</button><br/><br/>
             </Link>

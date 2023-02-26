@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 const Table = ({ customers }) => {
   return (
-    <table>
+    <table class="table table-striped">
       <thead>
         <tr>
         <th>Customer Id</th>

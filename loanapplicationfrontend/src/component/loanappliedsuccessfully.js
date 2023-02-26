@@ -12,12 +12,11 @@ const  LoanAppliedMessage= (props) => {
              navigate("/dashboard",{state:location.state});
       };
     return (
-        <>
+        <center>
            <p>Loan Applied successfully</p>
             <p>Click <Link onClick={handleClick}  to="/dashboard">
                 here</Link>to go back to the Home Page......</p>
-            
-        </>
+        </center>
     );
 }
 export default LoanAppliedMessage;

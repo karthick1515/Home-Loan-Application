@@ -61,6 +61,7 @@ const  LandVerificationOfficerUpdate = (props) => {
     return(
         <div><center>
             <form onSubmit={submitHandler}>
+            <h4>Loan Application Details</h4>
             <label>Application Id</label><br />
                 <input type="text" name="applicationId" value={data.applicationId}  onChange={changeHandler} readOnly/> <br />
             <label>Customer Id</label><br />
@@ -82,14 +83,14 @@ const  LandVerificationOfficerUpdate = (props) => {
                 <label>Loan Approved Amount</label><br />
                 <input type="text" name="loanApprovedAmount" value={data.loanApprovedAmount} onChange={changeHandler} readOnly/> <br />
                 <label>Land Verification Approval</label><br />
-                <input type="text" name="landVerificationApproval" value={data.landVerificationApproval} onChange={changeHandler} /> <br/>
+                <input type="text" name="landVerificationApproval" value={data.landVerificationApproval} onChange={changeHandler}/> <br/>
                 <label>Finance Verification Approval</label><br/>
                 <input type="text" name="financeVerificationApproval" value={data.financeVerificationApproval} onChange={changeHandler} readonly/> <br />
                 <label>Manager Approval</label><br />
                 <input type="text" name="adminApproval" value={data.adminApproval} onChange={changeHandler} readOnly/> <br />
                 <label>Overr All Status</label><br />
-                <input type="text" name="status" value={data.status} onChange={changeHandler} readOnly/> <br />
-                <input type="submit" name="submit" value="Submit"/>
+                <input type="text" name="status" value={data.status} onChange={changeHandler} readOnly/> <br /><br/>
+                <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"/><br/><br/>
                 <Link onClick={submitCancelHandler}  to="/viewloanforlandverification">
             <button class="btn btn-outline-danger">Cancel</button><br/><br/>
             </Link>

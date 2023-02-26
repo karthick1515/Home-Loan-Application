@@ -2,45 +2,53 @@
 import { Link } from "react-router-dom";
 function Home(){
     return (
-        <> <center>
-             <Link to="/about">
-            <button class="btn btn-outline-danger">about</button><br/><br/>
-            </Link>
-            <br/>
-            <Link to="/process">
-            <button class="btn btn-outline-danger">Process And Guidance</button><br/><br/>
-            </Link>
-            <p>Customer login</p>
+        <>
+            <center><h1>Welcome To Our Home Loan Application</h1>
+            <Link to="/about"><br/>
+        <button class="btn btn-outline-danger">About Us</button>
+        </Link><br/>
+        <br/>
+        <Link to="/process">
+            <button class="btn btn-outline-danger">Loan Process Details</button>
+        </Link></center>
+        <center><table ><tr>
+            <td>
+            <p>Customer Login</p>
+            <p>Register here:</p>
             <Link to="/customer/signup">
-            <button class="btn btn-outline-danger">Sign Up</button><br/><br/>
+            <button class="btn btn-outline-success">Register</button><br/>
             </Link>
-
+              <p>Sign in if you already registered:</p>
             <Link to="/customer/signin">
             <button class="btn btn-outline-danger">Sign In</button>
             </Link>
-
-            <p>Land Verification login</p>
+            </td><td>
+            <p>Land Verification Login</p>
             <Link to="/landofficerlogin">
             <button class="btn btn-outline-danger">Sign In</button>
             </Link>
-
-            <p>Finance Verification login</p>
+            </td>
+            <td>
+            <p>Finance Verification Login</p>
             <Link to="/financeofficerlogin">
             <button class="btn btn-outline-danger">Sign In</button><br/><br/>
             </Link>
-            
-            <p>Manager login</p>
+            </td><td>
+            <p>Manager Login</p>
             <Link to="/managerlogin">
             <button class="btn btn-outline-danger">Sign In</button><br/><br/>
             </Link>
-            
-            <p>Admin login</p>
+            </td>
+            <td>
+            <p>Admin Login</p>
             <Link to="/adminsignin">
             <button class="btn btn-outline-danger">Sign In</button><br/><br/>
             </Link>
-
-            </center>
-
+            </td>
+            </tr>
+            </table>
+            </center>      
+            
         </>
     );
 }

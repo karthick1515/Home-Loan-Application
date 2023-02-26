@@ -88,7 +88,7 @@ const  ManagerVerificationOfficerUpdate = (props) => {
                 <input type="text" name="adminApproval" value={data.adminApproval} onChange={changeHandler} /> <br />
                 <label>Overr All Status</label><br />
                 <input type="text" name="status" value={data.status} onChange={changeHandler} /> <br />
-                <input type="submit" name="submit" value="Submit"/>
+                <input class="btn btn-outline-success" type="submit" name="submit" value="Submit"/>
                 <Link onClick={submitCancelHandler}  to="/viewloanformanagerverification">
             <button class="btn btn-outline-danger">Cancel</button><br/><br/>
             </Link>

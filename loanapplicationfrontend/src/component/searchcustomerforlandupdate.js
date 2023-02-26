@@ -33,11 +33,12 @@ const navigate = useNavigate();
 
   return (<center>
     <form onSubmit={handleSubmit}>
+    <h4>Customer Search</h4>
       <label>
         Enter the CustomerId:
         <input type="text" name="customerId" value={customerId} onChange={changeHandler} />
       </label><br/><br/>
-            <button type="submit">Submit</button><br/><br/>
+            <button class="btn btn-outline-success" type="submit">Submit</button><br/><br/>
             
       <Link  to="/landofficerdashboard">
             <button class="btn btn-outline-danger">Go Back</button><br/><br/>

@@ -1,0 +1,60 @@
+input.empty-field {
+    border-color: red;
+    outline: none;
+  }
+  input.empty-field::placeholder {
+    color: red;
+  }
+
+.failed::placeholder,
+.failed {
+  border: 1px solid red;
+  color: red;
+}
+h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
+  }
+  h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .bg {
+    background-image: url("C:\Users\KASASIKU\HTML\loanapplicationfrontend\src\asset\background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow: auto;
+  }
+  table {
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 3px none;
+  }
+  
+  table td {
+    padding: 10px;
+  border-style: solid;
+  border-width: 25px;
+  background-color: hsl(53, 73%, 74%);
+  }
+  p {
+    font-weight: bold;
+  }

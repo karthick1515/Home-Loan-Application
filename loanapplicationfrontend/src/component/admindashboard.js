@@ -6,6 +6,7 @@ const  AdminDashBoard = (props) => {
     return (
         <>
            <center>
+            <h4>Admin Profile</h4><br/>
             <Link to="/addfinanceverificationofficer">
             <button class="btn btn-outline-danger">Add Finance Verification Officer</button><br/><br/>
             </Link>

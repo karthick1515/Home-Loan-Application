@@ -17,35 +17,53 @@ const navigate = useNavigate();
             }
         );
     }
-  const handleSubmit = event=> {
+
+  const handleSubmit =async(event)=> {
     event.preventDefault();
-    
-    const value=SendManagersigndetails(logindata);
-    console.log(value);
-  
-    value.then(function(response){
-          if(response.data.financeverificationId !== "" || response.data.financeverificationId !== null){
-            navigate("/managerdashboard",{state:response.data});
-        }
-    
-    });    
+    let hasEmptyFields = false;
+    for (const key in logindata) {
+      if (!logindata[key]) {
+        const input = document.getElementsByName(key)[0];
+        input.classList.add("empty-field");
+        hasEmptyFields = true;
+      } else {
+       
+        const input = document.getElementsByName(key)[0];
+        input.classList.remove("empty-field");
+      }
+    }
+    if (hasEmptyFields) {
+      alert("fill the email address and password");
+      return;
+    }
+    try {
+      const response=await(SendManagersigndetails(logindata));
+      if (response.data.managerId !== "" || response.data.managerId !== null) {
+        navigate("/managerdashboard",{state:response.data});
+        console.log(response.data);
+      }
+    } catch (error) {
+      if (error.response && error.response.status === 404) {
+        alert("Enter the Valid login details");
+      } else {
+        alert("Enter the valid login details");
+      }
+    }
   };
 
   return (
+    <center>
     <form onSubmit={handleSubmit}>
-      <label>
-        Email:
-        <input type="text" name="emailId" value={emailId} onChange={changeHandler} />
-      </label>
-      <label>
-        Password:
-        <input type="password" name="password" value={password} onChange={changeHandler} />
-      </label>
-      <button type="submit">Submit</button>
+    <br/><h4>Manager Sign In</h4><br/>
+      <label>Email:<br/><input type="text" name="emailId" value={emailId} onChange={changeHandler} placeholder="enter the emailId"/>
+      </label><br/><br/>
+      <label>Password:<br/><input type="password" name="password" value={password} onChange={changeHandler} placeholder="enter the password"/>
+      </label><br/><br/>
+      <button type="submit" class="btn btn-outline-success">Submit</button><br/><br/>
       <Link  to="/">
-            <button class="btn btn-outline-danger">Go Back</button><br/><br/>
+            <button class="btn btn-outline-danger">Go Back</button><br/><br/><br/>
             </Link>
-    </form>
+    </form></center>
   );
 };
 

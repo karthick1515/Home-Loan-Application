@@ -33,12 +33,13 @@ const navigate = useNavigate();
 
   return (<center>
     <form onSubmit={handleSubmit}>
+    <h4>Loan Search</h4>
       <label>
         Enter the CustomerId To Update Finance Verification In The Customer's Loan Application:
         <input type="text" name="customerId" value={customerId} onChange={changeHandler} />
       </label><br/><br/>
       
-      <button type="submit">Search Loan Application</button><br/><br/>
+      <button class="btn btn-outline-success" type="submit">Search Loan Application</button><br/><br/>
       <Link  to="/financeofficerdashboard">
             <button class="btn btn-outline-danger">Go Back</button><br/><br/>
             </Link>

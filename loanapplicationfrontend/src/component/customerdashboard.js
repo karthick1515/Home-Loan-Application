@@ -33,7 +33,7 @@ const  DashBoard = (props) => {
           if (error.value && error.value.status === 404) {
             alert("Your not applied for the loan yet");
           } else {
-            alert("Check whether your applied for the loan");
+            alert("Your not applied for the loan yet");
           }
         }
       };
@@ -47,7 +47,9 @@ const  DashBoard = (props) => {
 
     return (
         <>
+        
            <center>
+            <h4>Welcome To Our Home loan Application....{location.state.customerName}</h4><br/>
             <Link onClick={handleProfileSubmit} to="/customerdetails">
             <button class="btn btn-outline-danger">Profile</button><br/><br/>
             </Link>

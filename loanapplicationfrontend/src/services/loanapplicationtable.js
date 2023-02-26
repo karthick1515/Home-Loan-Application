@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoanApplicationTable = ({ loanapplications }) => {
   return (
-    <table>
+    <table class="table table-striped">
       <thead>
         <tr>
         <th>Application Id</th>

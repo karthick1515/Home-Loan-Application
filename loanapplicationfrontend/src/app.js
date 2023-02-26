@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {Routes,Route} from 'react-router-dom';
 import SignIn from './component/customersignin';
 import SignUp from './component/customersignup';
@@ -47,8 +49,12 @@ import ViewAllLoanApplication from './component/viewallloanapplications';
 import About from './component/aboutus';
 import Process from './component/process';
 
+import { BrowserRouter } from 'react-router-dom';
+import './index.css';
+
 function App(){
-    return(
+    return(<div className="bg">
+        <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />}/> 
             <Route path="/about" element={<About/>}></Route>
@@ -103,7 +109,8 @@ function App(){
             
     
         </Routes>
+        </BrowserRouter>
+        </div>
     );
 }
-
 export default App;

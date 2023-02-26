@@ -50,7 +50,7 @@ function Update(props) {
     return(
         <div><center>
             <form onSubmit={submitHandler}>
-                
+                <h4>Customer Details</h4>
             <label>CustomerId</label><br />
                 <input type="text" name="customerId" value={data.customerId}  onChange={changeHandler} readOnly/> <br />
                 <label>EmailId</label><br />
@@ -71,8 +71,11 @@ function Update(props) {
                 <input type="number" name="aadharNumber" value={data.aadharNumber} onChange={changeHandler}/> <br />
                 <label>PanNumber</label><br />
                 <input type="text" name="panNumber" value={data.panNumber} onChange={changeHandler}/> <br />
-                <input type="submit" name="submit" value="Update" />
+                <br/>
+                <input class="btn btn-outline-success" type="submit" name="submit" value="Update" />
+                <br/>
                 <Link onClick={submitCancelHandler}  to="/dashboard">
+                <br/>
             <button class="btn btn-outline-danger">Cancel</button><br/><br/>
             </Link>
             </form></center>

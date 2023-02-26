@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import { Link } from "react-router-dom";
+
 const SearchCustomerForManagerUpdate = (props) => {
     const [customerId,setCustomerId] = useState("");
 
@@ -33,11 +34,12 @@ const navigate = useNavigate();
 
   return (<center>
     <form onSubmit={handleSubmit}>
+    <h4>Customer Search</h4>
       <label>
         Enter the CustomerId:
         <input type="text" name="customerId" value={customerId} onChange={changeHandler} />
       </label><br/><br/>
-            <button type="submit">Submit</button><br/><br/>
+            <button class="btn btn-outline-success" type="submit">Submit</button><br/><br/>
             
       <Link  to="/managerdashboard">
             <button class="btn btn-outline-danger">Go Back</button><br/><br/>
