@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100wh;
+}
 input.empty-field {
     border-color: red;
     outline: none;
@@ -13,8 +20,8 @@ input.empty-field {
 }
 h4 {
     font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
+    font-family: 'Climate Crisis', cursive;
+    color: #7d7d7d;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -22,10 +29,26 @@ h4 {
     padding: 0.5em 0;
     border-bottom: 1px solid #ccc;
   }
+
+  .login-heading {
+    color: #7d7d7d;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    color: #7d7d7d;
+    font-size: 1.0em;
+    font-style: normal;
+    
+  }
+
+
   h1 {
     font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
+    font-family: 'Climate Crisis', cursive;
+    color: #7d7d7d;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -35,12 +58,13 @@ h4 {
   }
   
   .bg {
-    background-image: url("C:\Users\KASASIKU\HTML\loanapplicationfrontend\src\asset\background.webp");
+    background-image: url("C:\Users\KASASIKU\HTML\Sprint 2 final front end\loanapplicationfrontend\src\asset\alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
     overflow: auto;
+    
   }
   table {
     border-collapse: collapse;
@@ -52,8 +76,10 @@ h4 {
   table td {
     padding: 10px;
   border-style: solid;
-  border-width: 25px;
-  background-color: hsl(53, 73%, 74%);
+  border-radius: 10px;
+  border-color: #f2f2f2;
+  border-width: 10px;
+  background-color: white;
   }
   p {
     font-weight: bold;

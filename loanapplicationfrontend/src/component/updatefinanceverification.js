@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import UpdateLoanApproval from '../services/updateloanapprovals';
 
-
 const  FinanceVerificationOfficerUpdate = (props) => {
     const location= useLocation();
     console.log(location.state);

@@ -57,9 +57,9 @@ const navigate = useNavigate();
       </label><br/><br/>
       <label>Password:<br/><input type="password" name="password" value={password} onChange={changeHandler} placeholder="enter the password"/>
       </label><br/><br/>
-      <button type="submit" class="btn btn-outline-success">Submit</button><br/><br/>
+      <button type="submit" class="btn btn-light">Submit</button><br/><br/>
       <Link  to="/">
-            <button class="btn btn-outline-danger">Go Back</button><br/><br/><br/>
+            <button class="btn btn-light">Go Back</button><br/><br/><br/>
             </Link>
     </form></center>
   );

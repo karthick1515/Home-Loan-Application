@@ -62,6 +62,38 @@ function Addfinanceverificationofficer() {
       }
     
     return(
+      <>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            EHomeLoan
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="/">
+                Home
+              </a>
+              <a class="nav-link" href="/about">
+                About
+              </a>
+              <a class="nav-link" href="/process">
+                Process And Guidence
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
         <div><center>
           <h4>Add Finance Verification Officer</h4> <br/>
             <form onSubmit={submitHandler}>
@@ -81,6 +113,7 @@ function Addfinanceverificationofficer() {
             </Link>
             </form></center>
         </div>
+        </>
     );
 }
 
